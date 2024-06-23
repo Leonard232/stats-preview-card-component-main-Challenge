@@ -1,0 +1,151 @@
+/*****************************/
+/* BELOW 1344px (Smaller desktops) */
+/*****************************/
+
+@media (max-width: 84em) {
+  .container {
+    max-width: 1200px;
+    max-height: 500px;
+  }
+
+  .image {
+    width: 600px;
+    height: auto;
+  }
+
+  .content-container {
+    width: 600px;
+  }
+}
+
+/*****************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*****************************/
+
+@media (max-width: 75em) {
+  .container {
+    max-width: 800px;
+    max-height: 350px;
+  }
+
+  .image {
+    width: 700px;
+    height: auto;
+  }
+
+  .content-container {
+    width: 400px;
+    padding: 50px 0 50px 50px;
+  }
+
+  .content-text {
+    font-size: 12px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .heading-text {
+    width: 350px;
+  }
+
+  .stat-text {
+    font-size: 12px;
+  }
+
+  .grid {
+    column-gap: 12px;
+    grid-template-columns: repeat(3, 100px);
+  }
+}
+
+/*****************************/
+/* BELOW 944px (Tablets) */
+/*****************************/
+
+@media (max-width: 59em) {
+  .container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    max-height: 100vh;
+    margin: 50px 50px;
+  }
+
+  .image {
+    grid-row: 1 / 1;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(70, 27, 96, 0.534),
+        rgba(99, 29, 143, 0.603)
+      ),
+      url(images/image-header-mobile.jpg);
+
+    height: 350px;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 700px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    padding: 50px 90px 90px 90px;
+  }
+
+  .content-text {
+    font-size: 16px;
+    text-align: center;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 36px;
+
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .stat-text {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+/*****************************/
+/* BELOW 704px (Smaller Tablets) */
+/*****************************/
+
+/* @media (max-width: 44em) {
+} */
